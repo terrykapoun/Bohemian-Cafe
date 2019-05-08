@@ -2,14 +2,18 @@
     <h1 class="h1">Bohemian Cafe</h1>
 </header>
 <nav class="navBar">
+
+    <a class="navItem" routerLinkActive="active" [routerLinkActiveOptions]="{exact:true}"
+        [routerLink]="['/home']">HomePage</a>
+
+    <a class="navItem" routerLinkActive="active" [routerLinkActiveOptions]="{exact:true}"
+        [routerLink]="['/menu']">Menu</a>
+
     <a class="navItem" routerLinkActive="active" [routerLinkActiveOptions]="{exact:true}"
         [routerLink]="['/checkout']">Checkout</a>
 
     <a class="navItem" routerLinkActive="active" [routerLinkActiveOptions]="{exact:true}"
-        [routerLink]="['/menu']">Menu</a>
-    <a class="navItem" routerLinkActive="active" [routerLinkActiveOptions]="{exact:true}" [routerLink]="['/home']">Home
-        Page</a>
-
+        [routerLink]="['/registration']">Registration</a>
 
 </nav>
 <router-outlet></router-outlet>
