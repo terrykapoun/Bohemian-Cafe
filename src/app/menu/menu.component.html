@@ -1,0 +1,74 @@
+<form [formGroup]="menuForm" (ngSubmit)="menuSubmit()">
+  <h3>Roast Beef</h3>
+  <div formGroupName="roastBeef">
+    <select formControlName="orderSize">
+      <option>Large - $10.00</option>
+      <option>Small $5.00</option>
+    </select>
+
+    <h3>Orders</h3>
+    <select formControlName="orderQuantity">
+      <h3>Orders</h3>
+      <option>1</option>
+      <option>2</option>
+      <option>3</option>
+    </select>
+  </div>
+  <h3>Roast Pork</h3>
+  <div formGroupName="roastPork">
+    <select formControlName="orderSize">
+      <option>Large - $10.00</option>
+      <option>Small - $5.00</option>
+    </select>
+    <h3>Orders</h3>
+    <select formControlName="orderQuantity">
+      <option>1</option>
+      <option>2</option>
+      <option>3</option>
+    </select>
+  </div>
+  <h3>Roast Duck</h3>
+  <div formGroupName="roastDuck">
+    <select formControlName="orderSize">
+      <option>Large - $10.00</option>
+      <option>Small $5.00</option>
+    </select>
+    <h3>Orders</h3>
+    <select formControlName="orderQuantity">
+      <option>1</option>
+      <option>2</option>
+      <option>3</option>
+    </select>
+  </div>
+  <h3>Breaded Pork</h3>
+  <div formGroupName="breadedPork">
+    <select formControlName="orderSize">
+      <option>Large - $10.00</option>
+      <option>Small $5.00</option>
+    </select>
+    <h3>Orders</h3>
+    <select formControlName="orderQuantity">
+      <option>1</option>
+      <option>2</option>
+      <option>3</option>
+    </select>
+  </div>
+  <h3>Chicken Livers</h3>
+  <div formGroupName="chickenLivers">
+    <select formControlName="orderSize">
+      <option>Large - $10.00</option>
+      <option>Small $5.00</option>
+    </select>
+    <h3>Orders</h3>
+    <select formControlName="orderQuantity">
+      <option>1</option>
+      <option>2</option>
+      <option>3</option>
+    </select><br>
+  </div>
+
+  <button class="buttonFont" [disabled]="!menuForm.valid" type="submit">Submit</button>
+
+</form>
+
+
