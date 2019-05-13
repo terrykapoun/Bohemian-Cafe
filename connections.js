@@ -1,5 +1,5 @@
 const mysql = require("mysql");
-require("./config.js")
+// require("./config.js")
 let pool = mysql.createPool({
   connectionLimit: 10,
   Port: 3306,
