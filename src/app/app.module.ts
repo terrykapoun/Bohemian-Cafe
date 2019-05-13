@@ -7,7 +7,7 @@ import { MenuComponent } from './menu/menu.component';
 import { HomePageComponent } from './home-page/home-page.component';
 import { CheckoutComponent } from './checkout/checkout.component';
 import { RegistrationComponent } from './registration/registration.component';
-
+import {HttpClientModule} from '@angular/common/http'
 @NgModule({
   declarations: [
     AppComponent,
@@ -19,7 +19,7 @@ import { RegistrationComponent } from './registration/registration.component';
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule, ReactiveFormsModule
+    AppRoutingModule, ReactiveFormsModule, HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]
